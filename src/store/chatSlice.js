@@ -1,7 +1,8 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-const API = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+const API = process.env.REACT_APP_API_URL || 'https://ai-chatbot-backend-sand-beta.vercel.app';
+
 
 const getH = (token) => ({ headers: { Authorization: `Bearer ${token}` } });
 

@@ -4,7 +4,8 @@ import { useDispatch } from 'react-redux';
 import { useNavigate, Link } from 'react-router-dom';
 import { setCredentials } from '../store/authSlice';
 
-const API = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+const API = process.env.REACT_APP_API_URL || 'https://ai-chatbot-backend-sand-beta.vercel.app';
+
 
 export default function Login() {
   const dispatch = useDispatch();
